@@ -21,5 +21,5 @@ $medallas[]="$fo";
 echo json_encode($medallas);
 }
 
-
+//Este es el com,entaro
 
