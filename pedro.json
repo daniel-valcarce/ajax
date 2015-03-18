@@ -1,0 +1,50 @@
+
+{"Colombia":
+    [
+        {"ciudades":
+            [
+                {
+                    "id":"uno",
+                    "nombre":"cucuta",
+                    "codigoPostal":"1"
+                },
+                {
+                    "id":"dos",
+                    "nombre":"manizales",
+                    "codigoPostal":"2"
+                },
+                {
+                    "id":"tres",
+                    "nombre":"Pereira",
+                    "codigoPostal":"3"
+                },
+                {
+                    "id":"cuatro",
+                    "nombre":"Bucaramanga",
+                    "codigoPostal":"4"
+                }
+            ]
+        },
+        {"Departamentos":
+            [
+                {
+                    "id":"uno",
+                    "nombre":"Norte de santander"
+
+                },
+                {
+                    "id":"dos",
+                    "nombre":"cundinamarca"
+                },
+                {
+                    "id":"tres",
+                    "nombre":"Santander"
+                }
+            ]
+        }
+    ]
+}
+
+   
+
+

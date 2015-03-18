@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<snf-deportes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<deporte>
+		<id>01</id>
+		<nombre>Natacion</nombre>
+	</deporte>
+	<deporte>
+		<id>02</id>
+		<nombre>Baloncesto</nombre>
+	</deporte>
+	<deporte>
+		<id>03</id>
+		<nombre>Ciclismo</nombre>
+	</deporte>
+	<deporte>
+		<id>04</id>
+		<nombre>Atletismo</nombre>
+	</deporte>
+	<deporte>
+		<id>05</id>
+		<nombre>Judo</nombre>
+	</deporte>
+</snf-deportes>

@@ -1,0 +1,175 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+    
+        <title>Estadísticas SENA-SOFT</title>
+    
+<script type="text/javascript" src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+        <script type="text/javascript">
+           $(document).on('ready',function(){
+                corporatedata();
+            });
+            function corporatedata(){
+              $.ajax({ url:"Paises.xml", dataType:"xml", success: function(data){
+                      $('ul').children().remove();
+                      $(data).find('pais').each(function(){
+                        var idPais='"'+ $(this).find("id").text + '"';
+                        var info= "<option id="+idPais+">"+$(this).find('nombre_pais').text()+"</option>";   
+                        $('#paises').append(info);
+                      });
+                  }
+              });  
+                
+            }
+        </script>
+
+
+    </head>
+
+
+    <body>
+        <h1>Estadísticas SENA-SOFT</h1>
+        <div id="MedalsPerTrade">
+            <h2>Medallas en los Juegos Olímpicos</h2>
+            <form action="" method="get" name="medals">
+                <select id="paises">
+                    <option value="">Seleccione un país</option>
+                    <option value="01">01 - Colombia</option>
+                    <option value="01" selected>17 - Japón</option>
+                    <option value="..">.. - ...</option>
+                </select>
+                <button type="submit" name="showMedals" value="Show">Mostrar</button>
+            </form>
+            <table border="1" align="left" summary="Seleccione el País con el dropdown o desplegable que se encuentra en la parte superior">
+                <caption style="visibility:hidden">
+                    Medallas en los juegos Olímpicos
+                </caption>
+                <thead>
+                    <tr bgcolor="#CCCCCC">
+                        <th>Año</th>
+                        <th>Oro</th>
+                        <th>Plata</th>
+                        <th>Bronce</th>
+                        <th>Medallón de Excelencia</th>
+                        <th>Total</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>2009</td>
+                        <td>2</td>
+                        <td>1</td>
+                        <td>5</td>
+                        <td>2</td>
+                        <td>10</td>
+                    </tr>
+                    <tr bgcolor="#EEEEEE">
+                        <td>2007</td>
+                        <td>1</td>
+                        <td>9</td>
+                        <td>0</td>
+                        <td>2</td>
+                        <td>12</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <br clear="all">
+
+        <div id="PerformancePerDay">
+            <h2>Rendimiento sobre los días</h2>
+            <form action="" method="get" name="performance">
+                <select>
+                    <option value="">Seleccione un País</option>
+                    <option value="01">Colombia</option>
+                    <option value="01" selected>Japón</option>
+                    <option value="..">.. - ...</option>
+                </select>
+                <select>
+                    <option value="" selected>Seleccione un deporte/Año</option>
+                    <option value="2011">Atletismo</option>
+                    <option value="2009" selected>Natación</option>
+                    <option value="..">.. - ...</option>
+                </select>
+                <button type="submit" name="showPerformance" value="Show">Mostrar</button>
+            </form>
+            <!--<img src="CompetitorPerformance.png" alt="Diagram shows the performance of the competitors over the four competition days - Select the trade and competition/year with the dropdown above" style="margin-top:10px">-->
+            <br>
+            <table border="3">
+                <thead>
+                    <tr bgcolor="#CCCCCC">
+                        <th>
+                            Día
+                        </th>
+                        <th>
+                            Puntaje
+                        </th>
+                        <th>
+                            Porcentaje
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            Dia 1
+                        </td>
+                        <td>
+                            20
+                        </td>
+                        <td>
+                            30%
+                        </td>
+
+                    </tr>
+                    <tr bgcolor="#EEEEEE">
+                        <td>
+                            Dia 2
+                        </td>
+                        <td>
+                            30
+                        </td>
+                        <td>
+                            30%
+                        </td>
+
+                    </tr>
+
+                    <tr>
+                        <td>
+                            Dia 3
+                        </td>
+                        <td>
+                            23
+                        </td>
+                        <td>
+                            30%
+                        </td>
+
+                    </tr>
+
+                </tbody>
+                <tfoot>
+                    <tr bgcolor="#EEEEEE">
+                        <td>
+                            Total
+                        </td>
+                        <td>
+                            73
+                        </td>
+                        <td>
+                            30%
+                        </td>
+
+                    </tr> 
+                </tfoot>
+            </table> 
+
+
+
+        </div>
+
+    </body>
+</html>

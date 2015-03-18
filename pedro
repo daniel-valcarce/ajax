@@ -1,0 +1,49 @@
+{
+    "Colombia":
+    [
+                {
+                    "id":"uno",
+                    "nombre":"cucuta",
+                    "codigoPostal":"1"
+                },
+                {
+                    "id":"dos",
+                    "nombre":"manizales",
+                    "codigoPostal":"2"
+                },
+                {
+                    "id":"tres",
+                    "nombre":"Pereira",
+                    "codigoPostal":"3"
+                },
+                {
+                    "id":"cuatro",
+                    "nombre":"Bucaramanga",
+                    "codigoPostal":"4"
+                }       
+    ],
+    "Venezuela": [
+                {
+                    "id":"uno",
+                    "nombre":"barquisimeto",
+                    "codigoPostal":"1"
+                },
+                {
+                    "id":"dos",
+                    "nombre":"coro",
+                    "codigoPostal":"2"
+                },
+                {
+                    "id":"tres",
+                    "nombre":"caracas",
+                    "codigoPostal":"3"
+                },
+                {
+                    "id":"cuatro",
+                    "nombre":"merida",
+                    "codigoPostal":"4"
+                }
+            ]
+}      
+
+    
